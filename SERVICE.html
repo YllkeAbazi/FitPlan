@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<h3 style="background-color: #48d1CC; color: white; padding: 10px;">
+    FitPlan
+    <nav style="float: right;">
+        <a href="Home.html" style="color: white; padding-left: 20px;">Home</a>
+        <a href="About.html" style="color: white; padding-left: 20px;">About</a>
+        <a href="Services.html" style="color: white; padding-left: 20px;">Services</a>
+        <a href="Contact.html" style="color: white; padding-left: 20px;">Contact</a>
+    </nav>
+</h3>
+
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dietat për FitPlan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .diet-card {
+            background-color: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .diet-card h3 {
+            color: #48d1cc;
+            cursor: pointer;
+        }
+
+        .food-list {
+            display: none;
+            padding: 10px;
+        }
+
+        .food-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .food-list ul li {
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .diet-card:hover {
+            background-color: #e0f7fa;
+        }
+    </style>
+    <script>
+        function toggleFoodList(dietId) {
+            const foodList = document.getElementById(dietId);
+            foodList.style.display = (foodList.style.display === 'none' || foodList.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+
+   
+    <section>
+        <div class="diet-card">
+            <h3 onclick="toggleFoodList('humbje-pesha')">Dietë për Humbje Pesha</h3>
+            <div id="humbje-pesha" class="food-list">
+                <ul>
+                    <li>Shalqi (për hidratim dhe djegie të yndyrës)</li>
+                    <li>Peshk me yndyrë të ulët (për proteinë dhe omega-3)</li>
+                    <li>Perime të gjelbra (spinaq, brokoli) për pastrim dhe fibra</li>
+                    <li>Vaj ulliri (për yndyra të shëndetshme)</li>
+                    <li>Avokado (ndihmon në ndjenjën e ngopjes)</li>
+                    <li>Vezë (për proteina dhe yndyra të shëndetshme)</li>
+                    <li>Quinoa (për proteina dhe karbohidrate komplekse)</li>
+                    <li>Thjerrëza dhe fasule (për proteina dhe fibra)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+   
+    <section>
+        <div class="diet-card">
+            <h3 onclick="toggleFoodList('rritje-muskulore')">Dietë për Rritje Muskulore</h3>
+            <div id="rritje-muskulore" class="food-list">
+                <ul>
+                    <li>Petulla me vezë dhe mjaltë (për karbohidrate dhe proteina)</li>
+                    <li>Qumësht me yndyrë të ulët (për proteina dhe kalcium)</li>
+                    <li>Gjizë (për proteinë dhe kalcium)</li>
+                    <li>Ndihmes për proteinat e shtuar, si pluhur proteine</li>
+                    <li>Karrota dhe portokalle (për vitaminat dhe antioksidantët)</li>
+                    <li>Vezë (për proteina dhe yndyra të shëndetshme)</li>
+                    <li>Avokado (për yndyra të shëndetshme dhe vitaminë E)</li>
+                    <li>Quinoa (për proteina dhe karbohidrate komplekse)</li>
+                    <li>Peshk si salmoni dhe ton (për omega-3 dhe proteina)</li>
+                    <li>Thjerrëza dhe fasule (për proteina dhe fibra)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="diet-card">
+            <h3 onclick="toggleFoodList('shendet-persosur')">Dietë për Shëndet të Përsosur</h3>
+            <div id="shendet-persosur" class="food-list">
+                <ul>
+                    <li>Molla (për vitaminën C dhe fibra)</li>
+                    <li>Oriz integral (për karbohidrate dhe energji të qëndrueshme)</li>
+                    <li>Mandarina (antioksidant dhe vitaminë C)</li>
+                    <li>Peshk si salmoni (omega-3 dhe proteina)</li>
+                    <li>Farë liri dhe chia (për acide yndyrore të shëndetshme)</li>
+                    <li>Spinaq (për hekur dhe vitaminë K)</li>
+                    <li>Bananet (për kalium dhe energji natyrale)</li>
+                    <li>Arrat (për yndyra të shëndetshme dhe antioksidantë)</li>
+                    <li>Djathë i dhisë (për kalcium dhe proteina)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+
+  
+    <section id="trajneret" style="padding: 40px 0; background-color: #f9f9f9;">
+        <h2 style="text-align: center; color: #333; font-size: 32px; margin-bottom: 30px;">Trajnerët</h2>
+        <p style="text-align: center; color: #555; font-size: 18px; margin-bottom: 40px;">Trajnerët tanë janë profesionistë të kualifikuar dhe të përkushtuar për të arritur rezultatet që dëshironi.</p>
+        
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+        
+            <div style="background-color: white; padding: 20px; width: 280px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+                <img src="https://www.uaepersonaltrainers.com/wp-content/uploads/2022/10/Dubai-Female-Personal-Trainer-and-Group-Fitness-Coach-Mary-e1667037675488.jpeg" alt="Aria" style="width: 100%; height: auto; border-radius: 8px;">
+                <h3 style="color: #48d1CC; margin-top: 20px;">Aria</h3>
+                <p style="font-size: 16px; color: #555;">Trajnere personal me përvojë 5 vjeçare në fushën e fitnesit dhe ushtrimeve për forcë.</p>
+                <p style="font-weight: bold; color: #48d1CC;">Çmimi: 50€ për muaj</p>
+            </div>
+    
+            <div style="background-color: white; padding: 20px; width: 280px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+                <img src="https://media.istockphoto.com/id/1361355221/photo/happy-asian-athletic-woman-exercising-with-hand-weights-in-a-gym-and-looking-at-camera.jpg?s=612x612&w=0&k=20&c=bDUvRf25Ua6iEIbdbWDjRxSEG63Mpz2QkwhZjMuvE3c=" alt="Nelly" style="width: 100%; height: auto; border-radius: 8px;">
+                <h3 style="color: #48d1CC; margin-top: 20px;">Nelly</h3>
+                <p style="font-size: 16px; color: #555;">Specialiste në dieta dhe trajnim për humbje peshe. Ajo ofron këshilla dhe mbështetje për ndryshime të shëndetshme.</p>
+                <p style="font-weight: bold; color: #48d1CC;">Çmimi: 60€ për muaj</p>
+            </div>
+    
+            <div style="background-color: white; padding: 20px; width: 280px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/mh-trainer-2-1533576998.png?resize=980:*" alt="Floriani" style="width: 100%; height: auto; border-radius: 8px;">
+                <h3 style="color: #48d1CC; margin-top: 20px;">Floriani</h3>
+                <p style="font-size: 16px; color: #555;">Trajner i avancuar i aerobikut dhe fitnessit me fokus në përmirësimin e qëndrueshmërisë dhe fleksibilitetit.</p>
+                <p style="font-weight: bold; color: #48d1CC;">Çmimi: 55€ për muaj</p>
+            </div>
+<div style="background-color: white; padding: 20px; width: 280px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-trainer-in-gym-royalty-free-image-1584723855.jpg?resize=980:*" alt="John" style="width: 100%; height: auto; border-radius: 8px;">
+    <h3 style="color: #48d1CC; margin-top: 20px;">John</h3>
+    <p style="font-size: 16px; color: #555;">Trajneri John ka programe stërvitjeje dhe dieta të personalizuara për secilin, duke marrë parasysh nivelin e tyre të formës fizike, mundësitë dhe kufizimet.</p>
+    <p style="font-weight: bold; color: #48d1CC;">Çmimi: 120€ për muaj</p>
+</div>
+
+<div style="background-color: white; padding: 20px; width: 280px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+    <img src="https://img.freepik.com/premium-photo/young-female-fitness-personal-trainer-with-notepad-standing-gym-with-thumb-up_146671-31568.jpg?w=1800" alt="Nikki" style="width: 100%; height: auto; border-radius: 8px;">
+    <h3 style="color: #48d1CC; margin-top: 20px;">Nikki</h3>
+    <p style="font-size: 16px; color: #555;">Trajnerja Nikki ofron programet më të mira të stërvitjes dhe këshilla të personalizuara për një stil jetese të shëndetshëm. Ajo është e specializuar në ndihmën ndaj individëve që duan të arrijnë qëllimet e tyre fizike duke përdorur teknika efektive.</p>
+    <p style="font-weight: bold; color: #48d1CC;">Çmimi: 95€ për muaj</p>
+</div>
+
+
+<div style="background-color: white; padding: 20px; width: 280px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+    <img src="https://i.pinimg.com/736x/fe/15/d7/fe15d7d389f40cf922fa68cb0a200794.jpg" alt="Pope" style="width: 100%; height: auto; border-radius: 8px;">
+    <h3 style="color: #48d1CC; margin-top: 20px;">Pope</h3>
+    <p style="font-size: 16px; color: #555;">Trajneri Pope ka shumë vite përvojë në stërvitje dhe zhvillim të trupit, me një fokus të veçantë në forcimin dhe përmirësimin e qëndrueshmërisë. Ai ofron mbështetje të personalizuar për çdo individ.</p>
+    <p style="font-weight: bold; color: #48d1CC;">Çmimi: 85€ për muaj</p>
+</div>
+</div>
+</section>
+
+</div>
+
+
+        </div>
+    </section>
+    
+    </section>
+
+ 
+<section id="ushtrimet">
+    <h2>Ushtrimet</h2>
+    <p>Ushtrimet janë pjesë kyçe për arritjen e qëllimeve tuaja fizike. Këtu janë disa nga ushtrimet që ofrojmë:</p>
+    <div class="section-content">
+        <div class="card">
+            <h3>Push-Ups</h3>
+            <p>Një ushtrim i shkëlqyer për forcimin e kraharorit, duarve dhe shpatullave.</p>
+        </div>
+        <div class="card">
+            <h3>Squats</h3>
+            <p>Ushtrimi i squats është i shkëlqyer për forcimin e këmbëve dhe gluteus-it.</p>
+        </div>
+        <div class="card">
+            <h3>Plank</h3>
+            <p>Një ushtrim për forcimin e muskujve të barkut dhe shpinës, që ndihmon për të mbajtur një qëndrim të mirë trupor.</p>
+        </div>
+    </div>
+
+
+    <div class="pay-section" style="margin-top: 20px; text-align: center; background-color: #ffcccc; padding: 20px; border-radius: 8px;">
+        <h3 style="color: #333;">Dëshironi të shihni më shumë ushtrime?</h3>
+        <p style="color: #666;">Paguaj tani për të zhbllokuar listën e plotë të ushtrimeve!</p>
+        <button onclick="showPaymentPage()" style="background-color: #48d1CC; color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer;">Paguaj Tani</button>
+    </div>
+</section>
+
+<script>
+    function showPaymentPage() {
+        alert("Ju do të drejtoheni te faqja e pagesës së shpejtë.");
+       
+        window.location.href = "payment.html"; 
+    }
+</script>
+
+
+
+</div>
+<section>
+    <section style="padding: 40px; background-color: #f9f9f9; border-top: 2px solid #48d1CC;">
+        <h2 style="text-align: center; color: #333; font-size: 32px; margin-bottom: 30px;">Çfarë thonë klientët tanë</h2>
+        
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+        
+            <div style="background-color: white; padding: 20px; width: 280px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <p style="font-style: italic; color: #555;">"FitPlan ka ndihmuar shumë për t'u ndjerë më energjik dhe të shëndetshëm!"</p>
+                <p style="font-weight: bold; color: #48d1CC;">- Klienti 1</p>
+            </div>
+    
+            <div style="background-color: white; padding: 20px; width: 280px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <p style="font-style: italic; color: #555;">"Programi i ushtrimeve dhe dietës është i përsosur për nevojat e mia. Jam shumë i lumtur!"</p>
+                <p style="font-weight: bold; color: #48d1CC;">- Klienti 2</p>
+            </div>
+    
+            <div style="background-color: white; padding: 20px; width: 280px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <p style="font-style: italic; color: #555;">"Shërbimi i trajnerëve është i shkëlqyer. Ata janë shumë të angazhuar dhe gjithmonë të gatshëm për të ofruar mbështetje."</p>
+                <p style="font-weight: bold; color: #48d1CC;">- Klienti 3</p>
+            </div>
+  
+            <div style="background-color: white; padding: 20px; width: 280px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <p style="font-style: italic; color: #555;">"Unë kam arritur objektivat e mia për humbje peshe dhe ndiej një ndryshim të madh në energjinë dhe shëndetin tim!"</p>
+                <p style="font-weight: bold; color: #48d1CC;">- Klienti 4</p>
+            </div>
+    
+            <div style="background-color: white; padding: 20px; width: 280px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <p style="font-style: italic; color: #555;">"Dietat dhe programet e trajnimit të FitPlan janë të personalizuara dhe shumë efektive. Të gjitha shërbimet janë të jashtëzakonshme!"</p>
+                <p style="font-weight: bold; color: #48d1CC;">- Klienti 5</p>
+            </div>
+    
+            <div style="background-color: white; padding: 20px; width: 280px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <p style="font-style: italic; color: #555;">"Një platformë e shkëlqyer për të arritur qëllimet e tua. Jam shumë i kënaqur me përparimin tim!"</p>
+                <p style="font-weight: bold; color: #48d1CC;">- Klienti 6</p>
+            </div>
+    
+            <div style="background-color: white; padding: 20px; width: 280px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <p style="font-style: italic; color: #555;">"FitPlan ka qenë një ndihmë e madhe për mua për të humbur peshë dhe për të mbajtur një stil jetese të shëndetshëm!"</p>
+                <p style="font-weight: bold; color: #48d1CC;">- Klienti 7</p>
+            </div>
+
+            <div style="background-color: white; padding: 20px; width: 280px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <p style="font-style: italic; color: #555;">"Shërbimi i personalizuar dhe mbështetje e vazhdueshme është arsyeja pse kam arritur të arrij qëllimet e mia."</p>
+                <p style="font-weight: bold; color: #48d1CC;">- Klienti 8</p>
+            </div>
+    
+            <div style="background-color: white; padding: 20px; width: 280px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <p style="font-style: italic; color: #555;">"FitPlan ofron mbështetje të shkëlqyer dhe të personalizuar për çdo person që ka nevojë të arrijë një formë më të mirë fizike."</p>
+                <p style="font-weight: bold; color: #48d1CC;">- Klienti 9</p>
+            </div>
+        </div>
+  
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="#more-client-testimonials" style="text-decoration: none; color: #fff; background-color: #48d1CC; padding: 10px 20px; border-radius: 5px; font-size: 18px;">View More</a>
+        </div>
+    </section>
+    <!DOCTYPE html>
+<html lang="sq-AL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #00a3d8;
+            color: white;
+            padding: 20px;
+        }
+        .footer-left, .footer-right {
+            flex: 1;
+        }
+        .footer-center {
+            flex: 2;
+            text-align: center;
+        }
+        .footer h2 {
+            margin-bottom: 10px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        .social-icons a:hover {
+            opacity: 0.7;
+        }
+        .subscribe input[type="email"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 200px;
+        }
+        .subscribe button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff5733;
+            color: white;
+            cursor: pointer;
+        }
+        .subscribe button:hover {
+            background-color: #e04e2b;
+        }
+        .links a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="footer">
+    <div class="footer-left">
+        <h2>Fit Plan</h2>
+        <p>Your plan to a healthier you</p>
+    </div>
+    <div class="footer-center">
+        <div class="social-icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+        </div>
+        <div class="subscribe">
+            <h2>Subscribe to our newsletter!</h2>
+            <input type="email" placeholder="Your E-mail">
+            <button>Subscribe</button>
+        </div>
+    </div>
+    <div class="footer-right">
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+    </footer>
+
+</body>
+</html>
+
+    
+        </div>
+    
+
+</body>
+</html>
